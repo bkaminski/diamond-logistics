@@ -12,5 +12,4 @@ get_header() ;?>
 
 <?php echo get_template_part('parts/page', 'contact-form'); ?>
 
-
 <?php get_footer(); ?>
