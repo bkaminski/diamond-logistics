@@ -1,4 +1,4 @@
-<div class="services-section section-in-base wf-section">
+<main class="services-section section-in-base wf-section">
     <div class="container-1140 services-container">
       <div data-w-id="f43161e7-6f80-752f-a088-f32f17d8485e" class="serv-heading-div">
         <h2 data-w-id="1069485e-8d88-3eca-e76e-e269d893aa52" class="service-heading homepage-heading">What We Offer</h2>
@@ -24,4 +24,4 @@
         </div>
       </div>
     </div>
-  </div>
+</main>

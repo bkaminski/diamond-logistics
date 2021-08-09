@@ -55,32 +55,6 @@ function wps_deregister_styles() {
     wp_dequeue_style( 'wp-block-library' );
 }
 
-// ENABLE WEBP IMAGE SUPPORT
-function webp_upload_mimes($existing_mimes) {
-    $existing_mimes['webp'] = 'image/webp';
-    return $existing_mimes;
-}
-add_filter('mime_types', 'webp_upload_mimes');
-
-// ENABLE WEBP PREVIEW IN MEDIA LIB
-function webp_is_displayable($result, $path) {
-    if ($result === false) {
-        $displayable_image_types = array( IMAGETYPE_WEBP );
-        $info = @getimagesize( $path );
-
-        if (empty($info)) {
-            $result = false;
-        } elseif (!in_array($info[2], $displayable_image_types)) {
-            $result = false;
-        } else {
-            $result = true;
-        }
-    }
-
-    return $result;
-}
-add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
-
 // REMOVE VERSION FROM JS AND CSS
 function vc_remove_wp_ver_css_js( $src ) {
     if ( strpos( $src, 'ver=' . get_bloginfo( 'version' ) ) )
@@ -144,19 +118,3 @@ function dmi_pagination($pages = '', $range = 1)
     }
 }
 //end pagination
-
-//Wordpress Fluid Images Bootstrap 5
-function bootstrap_fluid_images( $html ){
-  $classes = 'img-fluid'; // Bootstrap 5
-  // check if there are already classes assigned to the anchor
-  if ( preg_match('/<img.*? class="/', $html) ) {
-    $html = preg_replace('/(<img.*? class=".*?)(".*?\/>)/', '$1 ' . $classes . ' $2', $html);
-  } else {
-    $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
-  }
-  // remove dimensions from images,, does not need it!
-  $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
-  return $html;
-}
-add_filter( 'the_content','bootstrap_fluid_images',10 );
-add_filter( 'post_thumbnail_html', 'bootstrap_fluid_images', 10 );

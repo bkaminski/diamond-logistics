@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="60ca25273308b083f7e4b13a" data-wf-site="60ca248e577cfad837d1b229">
+<html <?php language_attributes(); ?> data-wf-page="60ca25273308b083f7e4b13a" data-wf-site="60ca248e577cfad837d1b229">
 <head>
   <?php get_template_part( 'parts/page', 'header-tracking' ); ?>
   <meta charset="utf-8">

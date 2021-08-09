@@ -13,5 +13,10 @@ function enqueue_dmi_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_dmi_styles');
 
-
+// WEBFLOW REQUIRED JQUERY VERSION
+function rollback_jquery() {
+  wp_deregister_script('jquery');
+  wp_enqueue_script('jquery-3.5.1','https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60ca248e577cfad837d1b229');
+}
+add_action('wp_enqueue_scripts','rollback_jquery',100);
 

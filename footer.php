@@ -1,4 +1,4 @@
-<div class="footer section-in-xs wf-section">
+<footer class="footer section-in-xs wf-section">
     <div class="footer-container container-1140">
       <div class="footer-grid">
         <div>
@@ -11,7 +11,7 @@
           </div>
         </div>
         <div>
-          <h5 class="heading-5">©2021 Diamond State Logistics</h5>
+          <h5 class="heading-5">&copy;<?php echo date('Y'); ?> Diamond State Logistics</h5>
         </div>
         <div>
           <h6 class="footer-heading footer-left">Office Location</h6>
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-  </div>
+</footer>
 <?php wp_footer(); ?>
 </body>
 </html>
