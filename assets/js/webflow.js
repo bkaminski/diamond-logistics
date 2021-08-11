@@ -287,12 +287,11 @@ module.exports = isObject;
 /**
  * Webflow: Core site library
  */
-var $ = jQuery;
+
 var Webflow = {};
 var modules = {};
 var primary = [];
 var secondary = window.Webflow || [];
-
 var $ = window.jQuery;
 var $win = $(window);
 var $doc = $(document);

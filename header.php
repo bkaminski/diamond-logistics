@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> data-wf-page="60ca25273308b083f7e4b13a" data-wf-site="60ca248e577cfad837d1b229">
+<?php if ( is_front_page() ): ?>
+  <html <?php language_attributes(); ?> data-wf-page="60ca25273308b083f7e4b13a" data-wf-site="60ca248e577cfad837d1b229">
+<?php elseif ( is_page ('services') ): ?>
+  <html <?php language_attributes(); ?> data-wf-page="60cb7d50b5130d70f147b445" data-wf-site="60ca248e577cfad837d1b229">
+<?php elseif ( is_page ('about') ): ?>
+  <html <?php language_attributes(); ?> data-wf-page="60cb79f38be728b86cfc986b" data-wf-site="60ca248e577cfad837d1b229">
+<?php else: ?>
+  <html <?php language_attributes(); ?>>
+<?php endif; ?>
 <head>
   <?php get_template_part( 'parts/page', 'header-tracking' ); ?>
   <meta charset="utf-8">
