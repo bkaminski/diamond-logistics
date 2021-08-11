@@ -5,19 +5,19 @@
       </div>
       <div class="services-grid">
         <div id="w-node-_95500e95-ec38-44d7-37ae-206830ef4990-f7e4b13a" data-w-id="95500e95-ec38-44d7-37ae-206830ef4990" class="service-wrapper">
-          <div class="div-block-4"></div>
-          <h4 class="services-heading">CDL Hauling</h4>
+          <div class="div-block-4 service-one"></div>
+          <h4 class="services-heading" style="text-align:center;">CDL Hauling</h4>
           <div class="text-block-3">Coming soon! In the near future, we will offer power-only CDL Hauling / Transportation service.</div>
           <a href="<?php echo get_home_url(); ?>/services" class="service-cta homepage-btn">Learn More</a>
         </div>
         <div data-w-id="d037c604-35c9-a69c-0103-98a46019dbf8" class="service-wrapper">
-          <div class="div-block-5"></div>
+          <div class="div-block-4 service-2"></div>
           <h4 class="heading-3">Box-Truck Hauling</h4>
           <div class="text-block-4">We currently offer Box-Truck Hauling service using a 26 foot box truck with lift gate.</div>
           <a href="<?php echo get_home_url(); ?>/services" class="service-cta homepage-btn">Learn More</a>
         </div>
         <div data-w-id="37fb3c60-5158-978b-6b39-9a1fec511ca3" class="service-wrapper">
-          <div class="div-block-6"></div>
+          <div class="div-block-4 service-3"></div>
           <h4 class="heading-4">Custom Services</h4>
           <div class="text-block-5">Our Box Truck service offers a variety of pick up and drop off options. </div>
           <a href="<?php echo get_home_url(); ?>/services" class="service-cta homepage-btn">Learn More</a>

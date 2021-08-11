@@ -90,12 +90,13 @@ a {
 }
 
 .section-in-base {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   &.contact-hero {
     padding-top: 0rem;
     padding-bottom: 0rem;
+    margin-top: 0rem;
   }
 
   &.about-hero, &.services-section {
@@ -1000,7 +1001,7 @@ a {
 
 .contact-form {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 
 .heading-6, .paragraph, .italic-text {
@@ -1465,10 +1466,19 @@ a {
   h5 {
     font-size: 1.25rem;
   }
+  .section-in-base.contact-hero {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-top: -4rem;
+}
+.contact-form {
+  padding-top: 0px;
+  padding-bottom: 1000px;
+}
 
   .section-in-base {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0rem;
   }
 
   .section-in-xs {
@@ -1607,7 +1617,7 @@ a {
 
   .section-header {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   .heading-6, .paragraph {
@@ -1725,8 +1735,8 @@ a {
   }
 
   .section-in-base {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
   }
 
   .section-in-xs {
@@ -1837,7 +1847,7 @@ a {
 @media screen and (max-width: 479px) {
   .section-in-base {
     padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    padding-bottom: 0rem;
 
     &.services-section {
       padding-top: 0rem;
@@ -1924,8 +1934,8 @@ a {
 
   .div-block-4 {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     min-height: 100px;
     min-width: 100px;
     -webkit-box-orient: horizontal;
