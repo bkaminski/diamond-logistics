@@ -1,7 +1,7 @@
 <?php 
 //LOAD SCRIPTS
 function enqueue_dmi_scripts() {
-    wp_enqueue_script('dmi-scripts', get_template_directory_uri() . '/assets/js/webflow.js' , array(), false, true );
+    wp_enqueue_script('dmi-scripts', get_template_directory_uri() . '/assets/js/dmiScripts.min.js' , array(), false, true );
 }
 add_action('wp_enqueue_scripts', 'enqueue_dmi_scripts');
 
