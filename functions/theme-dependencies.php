@@ -9,7 +9,6 @@ add_action('wp_enqueue_scripts', 'enqueue_dmi_scripts');
 //LOAD CSS
 function enqueue_dmi_styles() {
     wp_enqueue_style('dmi-styles', get_template_directory_uri() . '/assets/styles/dmiStyles.min.css');
-   
 }
 add_action('wp_enqueue_scripts', 'enqueue_dmi_styles');
 

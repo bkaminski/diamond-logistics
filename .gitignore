@@ -7,8 +7,14 @@ assets/js/scripts.js
 # ignore img assets
 assets/img/
 
-#ignore gulpfile
+# ignore gulpfile
 gulpfile.js
 
-#ignore screenshot
+# ignore screenshot
 screenshot.png
+
+# ignore Google Analytics / Tag Manager
+parts/page-header-tracking.php
+
+# ignore favicons / mobile app icons
+parts/page-favicons.php
